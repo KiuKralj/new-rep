@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: antiquewhite;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header{
+    width: 100%;
+    background-color: aquamarine;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+footer{
+    width: 100%;
+    background-color: bisque;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    background-color: rgba(0, 255, 0, 0.309);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /*flex: 1;*/
+    flex: 1;
+}

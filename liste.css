@@ -1,0 +1,47 @@
+/*ul#image-marker {
+    list-style-image: url(https://www.w3schools.com/cssref/sqpurple.gif);
+    
+}*/
+
+ul#image-marker {
+    list-style-type: disc ;
+    list-style-position: inside;
+    
+}
+
+table {
+    border: 1px solid red;
+    /*border-spacing: 15px;*/
+    border-collapse:collapse;
+}
+
+/*#search {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 400px;
+    height: 400px;
+    position: relative;
+    background-color: beige;
+}
+
+#svg-search {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    translate: -50% -50%;
+}*/
+
+#search {
+    background-position: px ;
+    background-color: beige;
+    padding: 10px;
+    min-width: 300px;
+    border-radius: 5px;
+    border: none;
+    background-image: url(./icons8-search.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-left: 30px;
+}
+

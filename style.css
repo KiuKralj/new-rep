@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/RobotoSlab-VariableFont_wght.ttf');
+}
+
+body {
+    font-size: larger;
+    font-weight: bold;
+}
+
+
+div {
+    opacity: 0.5;
+}
+
+.first {
+    font-family: Roboto;
+    font-size: medium;
+    color: #00ced1;
+    background-color: brown;
+    border: 1px solid rgb(3, 3, 14);
+    opacity: 0.5;
+
+}
+
+.second {
+    font-family: Merriweather;
+    font-style: oblique;
+    color: #00ced1;;
+    background-color: rgb(172, 25, 25, 0.5);
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #00ced1;
+    border: 2px dotted red;
+    background-color: green;
+    font-weight: 300;
+}
+
+.prvi {
+    font-family: Roboto;
+    color: whitesmoke;
+    background-color: rgb(67, 67, 119);
+    font-family:Roboto;
+    
+}
+
+
+.drugi {
+color: hotpink;
+background-color: rgb(67, 67, 119);
+}
+
+.quote1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.quote2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.increase {
+    font-weight: 900;
+    font-style: italic;
+}
+
