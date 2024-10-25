@@ -1,0 +1,42 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(70, 70, 126); 
+    
+}
+.navbar-brand{
+  color: white;
+}
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    margin-right: 5px; 
+  }
+  .navbar-nav li {
+    display: inline-block; 
+  }
+  
+  .navbar-nav a {
+    color: white; 
+    text-decoration: none; 
+    font-size: 16px; 
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    text-align: center;
+    background-color: rgb(37, 211, 153);
+    color: white;
+}
+
+img {
+    width: 120px;
+}
+
+
