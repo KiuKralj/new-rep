@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header {
+    text-align: center; 
+}
+
+h1 {
+    margin: 10px;
+}
+
+.nav {
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 20vh;
+    width: 90%; 
+    max-width: 800px;
+    margin: 20px auto;
+
+}
+
+.home {
+    
+    margin: 15px;
+    list-style-type: none;
+    
+}
+.home a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.background-img{
+    background-image: url('/images/banner3.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+}
+
+.bullet-list {
+    list-style-type: none; 
+    padding: 0;            
+}
+
+.bullet-list li {
+    background-image: url('/images/arrow_bullet.png'); 
+    background-repeat: no-repeat; 
+    background-position: left center; 
+    padding-left: 30px;  
+    margin-bottom: 10px; 
+}
+
+.color-1 {
+    color: orange;
+}
+.color-2 {
+    color: gray;
+}
+
+
+
+.feedback-item {
+    background-color: cornflowerblue;
+    padding: 5px;
+    margin: 20px;
+}
+
+.feedback-item {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    margin-bottom: 20px;
+}
+
+.feedback-item img {
+    width: 60px; 
+    height: 60px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    margin-right: 10px; 
+}
+
+.feedback-item h3 {
+    margin: 0;
+}
+
+.feedback-item p {
+    margin-top: 10px; 
+    margin-bottom: 5px;   
+}
