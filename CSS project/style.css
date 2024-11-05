@@ -4,7 +4,13 @@
     box-sizing: border-box;
 }
 
-
+@font-face {
+    font-family: Kiu;
+    src: url(/fonts/Roboto-Regular.ttf);
+}
+body{
+    font-family: Kiu;
+}
 
 header {
     text-align: center; 
@@ -19,6 +25,15 @@ h2 {
     text-align: center;
 }
 
+.mail-us{
+    color: black;
+}
+.get-in {
+    color: black;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
 
 
     .whoWeAre {
@@ -29,7 +44,7 @@ h2 {
         align-items: center;
         max-width: 1200px;
         margin: 0 auto;
-        padding: 0 20px; /* Padding na većim ekranima */
+        padding: 0 20px; 
     }
 
 
@@ -41,8 +56,8 @@ h2 {
 
 
 .dream-home{
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: px;
+    margin-right: px;
 }
 
 h3 {
@@ -131,7 +146,7 @@ h3 {
 
 
 
-.feedback-container h2 {
+.wps-h2 {
     color: black;
     margin-bottom: 50px;
 }
@@ -358,16 +373,17 @@ img.logo-3 {
 }
 
 
-.iframe {
+iframe {
     display: flex;               
     justify-content: center;      
-    overflow: hidden;             
+    overflow: hidden;  
+    width: 100%;
+    height: 30vh;
+    max-width: 100%;
+
 }
 
-iframe {
-    max-width: 100%;            
-    height: auto;                
-}
+
 
 .button{
     margin-top: 10px;
@@ -375,6 +391,37 @@ iframe {
     background-color: orange;
     color: white;
     padding: 10px 30px;
+}
+
+.footer {
+    background-color: #333; 
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center; 
+}
+
+.footer-links {
+    list-style: none; 
+    display: flex;
+    gap: 20px; 
+    padding: 0;
+    margin: 0;
+}
+.footer-links li a {
+    color: #fff; 
+    text-decoration: none; 
+    font-weight: bold;
+}
+
+.footer p{
+  color: white;
+  margin-top: 25px;
+  margin-bottom: 15px;
 }
 
 @media screen and (min-width: 768px) {
@@ -429,31 +476,97 @@ iframe {
 
         }
 
+   .color-1{
+        border: 5px solid white;
+        border-right: none;
+        padding-left: 10px;
+    }
+
+        .color-2{
+            color: white;
+        }
+
         .whoWeAre{
-    
+            width: 100%;
+            max-height: auto;
             flex-direction: row;
+            flex-wrap: wrap;
             justify-content: space-between;
             align-items: flex-start;
-            
+            margin-right: 10px;
+            margin-left: 10px;
+          }
+
+          .whoWeAre-h2{
+            margin-bottom: 40px;
           }
 
           .text-container{
-            width: 40%;
+            width: 50%;
+            margin: 0px;
+            padding: 0px;
+            
+        }
+
+        .text-container h3{
+            margin: 0;
+            margin-bottom: 15px;
+            font-size: 22px;
             
         }
 
         .image-container{
-            width: 40%;
-           
+            width: 50%;
+           height: unset;
         }
 
         .image-container img{
             width: 100%;
             height: auto;
         }
+
+     .dream-home h3{
+        margin-top: 0px;
+        font-size: 22px;
+     }
        
+     .bullet-list{
+        margin-top: 15px;
+     }
 
+     .wps-h2 {
+        color: black;
+     }
         
+     .feedback-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+     }
 
+     .feedback-item{
+        width: 40%;
+        margin-left: 40px;
+        margin-bottom: 40px;
+        padding-bottom: 20px;
+     }
+     iframe{
+        width: 100%;
+     }
+
+     .contact-form{
+        width: 100%;
+       margin: auto;
+     }
+
+     .inline{
+        display: flex;
+        width: 100%;
+        gap: 5px;
+     }
+
+     
+
+  
 }
 
