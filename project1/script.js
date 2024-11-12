@@ -54,7 +54,7 @@ const carusel = document.querySelector('img');
 
 let currentIndex = 0;
 
-carusel.src = carusel.caruselImgs[currentIndex];
+carusel.src = .caruselImgs[currentIndex];
 
 btnNext.addEventListener('click', () => {
     currentIndex += 1;
