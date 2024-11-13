@@ -1,0 +1,51 @@
+ body{
+    background-image: url('https://img.freepik.com/free-photo/ultra-detailed-nebula-abstract-wallpaper-4_1562-749.jpg');
+
+ }
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.press{
+    margin: 10px;
+    background-color: orangered;
+    color: white;
+    padding: 5px;
+}
+
+.card-button {
+    width: 300px;
+    height: 30px;
+    font-size: 20px;
+    /* border: 1px solid green; */
+    color: green;
+     margin: 10px;
+}
+
+.name{
+    background-color: white;
+    margin: 0px;
+    padding: 10px;
+}
+
+.card-button.liked {
+    background-color: green; 
+    color: white;
+}

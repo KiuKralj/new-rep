@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.messages{
+    width: 300px;
+    height: 500px;
+    margin: 20px;
+    border: 2px solid black;
+    
+}
+.input {
+    margin: 20px;
+    width: 200px;
+    border: 2px solid black;
+}
+
+.button-send{
+    width: 80px;
+    background-color: red;
+    color: white;
+    padding: 2px;
+}
+
+h1{
+    margin: 20px;
+}
