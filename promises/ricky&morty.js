@@ -1,46 +1,41 @@
-const URL = 'https://rickandmortyapi.com/api/character';
-const button = document.querySelector('button');
-const div = document.querySelector('.wrapper');
+const URL = "https://rickandmortyapi.com/api/character";
+const button = document.querySelector("button");
+const div = document.querySelector(".wrapper");
 
-
-function getImages(){
-    fetch(URL).then(response => response.json()).then(data => showCharacters(data))
+function getCharacters() {
+  fetch(URL)
+    .then((response) => response.json())
+    .then((data) => showCharacters(data));
 }
 
-getImages()
+getCharacters();
 
-function showCharacters(data){
-   data?.results.forEach(e => {
-      const divContainer = document.createElement('div')
-      divContainer.className='card'
+function showCharacters(data) {
+  data?.results.forEach((e) => {
+    const divContainer = document.createElement("div");
+    divContainer.className = "card";
 
-      const charImg = document.createElement('img')
-      charImg.src = e.image
+    const charImg = document.createElement("img");
+    charImg.src = e.image;
 
-      const buttonCard = document.createElement('button');
-      buttonCard.className = 'card-button'
-    
-      buttonCard.innerHTML = 'Like'
+    const buttonCard = document.createElement("button");
+    buttonCard.className = "card-button";
 
-      const charName = document.createElement('p');
-      charName.className = 'name'
-      charName.innerHTML = e.name
+    buttonCard.innerHTML = "Like";
 
-      buttonCard.addEventListener('click', () => {
-        buttonCard.classList.toggle('liked')
-      })
+    const charName = document.createElement("p");
+    charName.className = "name";
+    charName.innerHTML = e.name;
 
+    buttonCard.addEventListener("click", () => {
+      buttonCard.classList.toggle("liked");
+    });
 
-
-      divContainer.append(charImg, charName, buttonCard)
-      div.append(divContainer)
-
-   });
+    divContainer.append(charImg, charName, buttonCard);
+    div.append(divContainer);
+  });
 }
 
-showCharacters()
-
-
-
+showCharacters();
 
 //button.addEventListener('click',);

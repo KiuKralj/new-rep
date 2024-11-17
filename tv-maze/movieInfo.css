@@ -1,0 +1,35 @@
+header{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(48, 47, 49);
+    color: white;
+    height: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    
+}
+
+.bitShow{
+    margin: 3px;
+    font-size: 10px;
+    padding-top: 6px;
+ }
+ 
+ .search{
+     margin: 5px;
+     width: 120px;
+     text-align:left;
+ }
+
+ footer{
+    background-color: rgb(48, 47, 49);
+    height: 40px;
+    color: white;
+    text-align: center;
+    
+}
+
+.copy{
+    padding-top: 10px;
+    font-size: 12px;
+}

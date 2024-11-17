@@ -1,9 +1,15 @@
- body{
-    background-image: url('https://img.freepik.com/free-photo/ultra-detailed-nebula-abstract-wallpaper-4_1562-749.jpg');
 
+
+ .main{
+    background-image: url('https://img.freepik.com/free-photo/ultra-detailed-nebula-abstract-wallpaper-4_1562-749.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
  }
 
 .wrapper{
+    width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
