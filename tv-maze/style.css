@@ -1,75 +1,85 @@
-header{
-    display: flex;
-    justify-content: space-around;
-    background-color: rgb(48, 47, 49);
-    color: white;
-    height: 30px;
-    margin-bottom: 10px;
-    text-align: center;
-    
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(48, 47, 49);
+  color: white;
+  height: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+  padding-right: 40px;
 }
 
-.main{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
+.main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
-.container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-    gap: 10px;
-    width: 70%;
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  width: 80%;
 }
 
-.bitShow{
-   margin: 3px;
-   font-size: 10px;
-   padding-top: 6px;
+.bitShow {
+  margin: 3px;
+  font-size: 10px;
+  padding-top: 6px;
 }
 
-.search{
-    margin: 5px;
-    width: 120px;
-    text-align:left;
+.search {
+  margin: 5px;
+  width: 300px;
+  text-align: left;
 }
 
-.search::placeholder{
-    font-size: 10px;
-    padding-left: 5px;
-    padding-bottom: 50px;
+.search::placeholder {
+  font-size: 10px;
+  padding-left: 5px;
+  padding-bottom: 50px;
 }
 
-h1{
-    font-size: 20px;
+h1 {
+  font-size: 20px;
 }
-.card{
-    border: 1px solid gainsboro;
-    text-align: left;
-    
+.card {
+  border: 1px solid gainsboro;
+  text-align: left;
 }
-.movie-name{
-    padding-left: 10px;
+.movie-name {
+  padding-left: 10px;
 }
-.card, .movie-name{
-   color: rgb(53, 53, 171);
-   
-}
-
-footer{
-    background-color: rgb(48, 47, 49);
-    height: 40px;
-    color: white;
-    text-align: center;
-    
+.card,
+.movie-name {
+  color: rgb(53, 53, 171);
 }
 
-.copy{
-    padding-top: 10px;
-    font-size: 12px;
+footer {
+  background-color: rgb(48, 47, 49);
+  height: 40px;
+  color: white;
+  text-align: center;
+}
+
+.copy {
+  padding-top: 10px;
+  font-size: 12px;
+}
+.absolute {
+  width: 300px;
+  height: 500px;
+  position: absolute;
+  top: 40px;
+  right: 50px;
+  background-color: gray;
+  
+}
+.hide {
+  display: none;
 }

@@ -1,3 +1,4 @@
+
 header{
     display: flex;
     justify-content: space-around;
@@ -23,7 +24,7 @@ header{
 
  footer{
     background-color: rgb(48, 47, 49);
-    height: 40px;
+    height: 60px;
     color: white;
     text-align: center;
     
@@ -32,4 +33,39 @@ header{
 .copy{
     padding-top: 10px;
     font-size: 12px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.seasons-list{
+    margin-left: 20px;
+}
+
+/* .main{
+    /* height: 100vh; */
+/* } */ 
+
+.show-img{
+    width: 450px; 
+   justify-content: center;
+}
+
+.nameOfMovie{
+    text-align: center;
+    font-size: 40px;
+}
+.summary-div{
+    margin-left: 27%;
+    width: 80%;
+}
+.summary{
+    
+    width: 80%;
+}
+
+.first{
+    background-color: darkslategray;
 }
