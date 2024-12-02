@@ -5,6 +5,7 @@ import { useNavigate } from "react-router";
 
 export const HomePage = ({ showsData }) => {
   const navigate = useNavigate();
+
   const sortedData = showsData.sort(
     (a, b) => b.rating.average - a.rating.average
   );

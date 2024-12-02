@@ -20,7 +20,7 @@ export const SinglePage = ({ data }) => {
     fetch(seasonsURL)
       .then((response) => response.json())
       .then((data) => setSeasons(data));
-  },[]);
+  }, []);
 
   useEffect(() => {
     const castURL = `https://api.tvmaze.com/shows/${id}/cast`;
@@ -28,15 +28,14 @@ export const SinglePage = ({ data }) => {
     fetch(castURL)
       .then((response) => response.json())
       .then((data) => setCasts(data));
-  },[]);
+  }, []);
 
   return (
     <>
       <Header />
       <div className="single-page">
-        <div className="single-page-show-name">
-          <h1>{show?.name}</h1>
-        </div>
+        <h1>{show?.name}</h1>
+
         <div className="wrapper">
           <div className="single-page-image">
             <img src={show?.image.medium} alt="show" className="show-image" />
@@ -50,6 +49,13 @@ export const SinglePage = ({ data }) => {
                 </li>
               ))}
             </ul>
+
+            {/* <h2>Cast</h2>
+            <ul>
+              {casts.map((cast) => (
+                <li key={cast.person.id}>{cast.person.name}</li>
+              ))}
+            </ul>*/}
           </div>
           {/* <div className="casts">
             <h2>Cast</h2>

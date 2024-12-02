@@ -13,6 +13,22 @@ header {
   }
 
   .search-input{
-    width: 250px;
+    width: 350px;
     height: 30px;
+  }
+
+   .search-results {
+    position: absolute;
+    background-color: gray; 
+    border: 1px solid #ccc;
+    width: 350px;
+    max-height: 300px;
+    overflow-y: auto;
+    z-index: 1000;
+    cursor: pointer;
+  } 
+
+  .result-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
   }
