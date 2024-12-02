@@ -1,10 +1,14 @@
 import React from "react";
 import "./Header.css";
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Header() {
   const [searchQuery, setSearchQuery] = useState("");
   const [searchResults, setSearchResults] = useState([]);
+
+  
+  const navigate = useNavigate();
 
   const fetchSearchResults = (query) => {
     if (query) {
@@ -26,7 +30,9 @@ function Header() {
 
   return (
     <header>
-      <h1>BitShow</h1>
+      <h1 onClick={() => {
+          navigate('/')
+        }}>BitShow</h1>
       <div className="search-wrapper">
         <div>
           <input
@@ -39,7 +45,11 @@ function Header() {
         {searchQuery && searchResults.length > 0 && (
           <div className="search-results">
             {searchResults.map((result) => (
-              <div key={result.show.id} className="result-item">
+              <div key={result.show.id} className="result-item" onClick={() =>
+                 
+                  {navigate(`/show/${result.show.id}`)}
+
+              }>  
                 <h3>{result.show.name}</h3>
               </div>
             ))}
