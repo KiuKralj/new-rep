@@ -47,6 +47,10 @@ h3{
   width: 100%;
 }
 
+.search-input{
+  padding-left: 5px;
+}
+
 .single-page-show-name{
   margin: 15px;
 }
@@ -54,8 +58,14 @@ h3{
   width: 49%;
 } */
 
+.showName{
+  margin-bottom: 15px;
+  font-size: 45px;
+  cursor: pointer;
+}
+
 .show-image{
-  width: 250px;
+  width: 500px;
 }
 .wrapper{
   display: flex;
@@ -67,10 +77,12 @@ h3{
 
 .seasons{
   color: white;
-  font-size: 14px;
+  font-size: 22px;
   padding: 10px;
   /* width: 49%; */
- 
+  background-color: rgba(57, 53, 53, 0.5);
+  max-height: 200px;
+  overflow-y: scroll;
 }
 .single-page-summary{
   width: 70%;
@@ -79,7 +91,19 @@ h3{
   margin: 10px;
   color: white;
 }
+.casts{
+  height: 300px;
+  overflow-y: scroll;
+  color: white;
+  margin-top: 10px;
+  font-size: 18px;
+  background-color: rgba(57, 53, 53, 0.5);
+  padding: 10px;
+}
 
+header > h1{
+  cursor: pointer;
+}
 
 
 
