@@ -75,7 +75,7 @@ export const SinglePage = ({ data }) => {
                 </li>
               ))}
             </ul>
-            </div>
+            </div>()
           </div>
         </div>
         <div className="single-page-summary">
